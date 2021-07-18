@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assignment2.css">
+</head>
+<body>
+      
+    <nav class="nav-container">
+     
+            <ul class="nav-list">
+                <li><a href="#" class="nav-home">HOME</a></li>           
+                <li><a href="#" class="nav-about">ABOUT</a></li>
+                <li><a href="#" class="nav-book">BOOK</a></li>
+                <li><a href="#" class="nav-contact">CONTACT</a></li>
+            </ul>
+    
+    </nav>
+    
+    <div class="iframe-container">
+        <iframe src="assignment1.html" frameborder="0" class="iframe-content"></iframe>
+    </div>
+    <div class="img-container">
+        <div class="img1">
+            <img class="dog-pic" src="cheems-painting.jpg" alt="A cute doge painting">
+        </div>
+       <div class="text-container">
+          
+               <div class="p1">
+                   <div class="p1-text">This is the hotpink paragraph, font family is Arial</div>
+               </div>
+               <div class="p2">
+                   <div class="p2-text">This is the pink paragraph, font family is Courier</div>
+               </div>
+               <div class="p3">
+                   <div class="p3-text">This is the lightpink paragraph, font family is Corsiva</div> 
+                </div>
+           
+
+           <div class="btn-container"> 
+               <button class="btn" type="button" onclick="popUpMessage()">This is a button</button>
+            </div>
+        </div>
+          
+       </div>
+    
+
+    <footer class="footer-container">
+        <p class="footer-text">Study button, input, form and text area elements</p>
+    </footer>
+    <script>
+        const popUpMessage = () =>{
+            var popM = document.querySelector('.btn');
+            alert("A wild message appeared!");
+        }
+    </script>
+</body>
+</html>

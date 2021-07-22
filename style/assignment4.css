@@ -31,6 +31,7 @@
     width: 800px;
     margin-right: 15px;
     animation: minutes 10s infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes minutes {
@@ -52,6 +53,7 @@
     margin-left: 7px;
     margin-bottom: 55px;
     animation: hour 10s infinite;
+    animation-timing-function: linear;
     /*90 and 120*/
 }
 

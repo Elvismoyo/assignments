@@ -1,6 +1,15 @@
+.title{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color:	darkviolet;
+}
+
+
 .clock-container{
     position: relative;
-    border: 2px solid red;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -11,11 +20,8 @@
     background-image: url("/imgs/clock-img.png");
     background-size: contain;
     background-repeat: no-repeat;
-    border: 2px solid black;
     height: 400px;
     width: 400px;
-
-
 }
 
 .clock-hand-img1{

@@ -1,0 +1,61 @@
+.clock-container{
+    position: relative;
+    border: 2px solid red;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.clock{
+    background-image: url("/imgs/clock-img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    height: 400px;
+    width: 400px;
+
+
+}
+
+.clock-hand-img1{
+    position: absolute;
+
+    top: -80px;
+    height: 540px;
+    width: 800px;
+    margin-right: 15px;
+    animation: minutes 10s infinite;
+}
+
+@keyframes minutes {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+    }
+    
+}
+.clock-hand-img2{
+    position: absolute;
+    bottom: 30px;
+    height: 250px;
+    width: 1000px;
+    transform: rotate(90deg);
+
+    margin-left: 7px;
+    margin-bottom: 55px;
+    animation: hour 10s infinite;
+    /*90 and 120*/
+}
+
+@keyframes hour {
+    from{
+        transform: rotate(90deg);
+    }
+    to{
+        transform: rotate(120deg)
+    }
+    
+}

@@ -1,0 +1,153 @@
+.modal-containers{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.main-title{
+    text-align: center;
+}
+
+.container-modal-1, .container-modal-2{
+    width: 20%;
+    height: 70vh;
+    margin: 50px;
+
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.container-modal-1, .msgblock-2{
+    background-color: #73C2FB;
+}
+
+.container-modal-2, .msgblock-1{
+    background-color: #ffb7c5;
+}
+
+.title{
+    text-align: center;
+    
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.modal-links{
+    margin-top: 30px;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.img-cover{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+
+.modalWindow-1, .modalWindow-2{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalWindow-1{
+    background-color: rgba(	115, 194, 251, .8);
+
+}
+
+.modalWindow-2{
+    background-color: rgba(	255, 183, 197, .8);
+
+}
+.msgblock-1, .msgblock-2{
+    text-align: center;
+
+    width: 20%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px;
+    
+    position: relative;
+}
+
+.img-1, .img-2{
+    height: 80%;
+    width: 90%;
+  
+    border-radius: 10px;
+
+}
+ .modalWindow-1:not(:target), .modalWindow-2:not(:target){
+    opacity: 0;
+    display: none;
+    pointer-events: auto;
+}
+
+.text-container{
+    display: flex;
+    justify-content: center;
+    border-top: 2px black;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.text{
+
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    border-top: 2px solid black;
+    padding: 10px;
+}
+
+.close-link-1{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: orangered;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid white;
+    padding: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.close-link-2{
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.close-2{
+    padding: 30px;
+}
+a{
+    font-weight: bolds;
+}

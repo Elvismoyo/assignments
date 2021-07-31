@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/assignment7.css">
-    <title>Assignment 7</title>
-  
-    
+    <title>Assignment 8</title>
+    <link rel="stylesheet" href="style/assignment8.css">
 </head>
 <body>
-    <script src="JS/index.js"></script>
+    <script src="JS/assignment8.js"></script>
+    <!-- Bill Calculator -->
+    <h1>Jason's Tip Calculator V1</h1>
+    <div class="btns-container">
+        <button class="btn-bill" onclick="jasonTipV1(0)">BILL 1</button>
+        <button class="btn-bill" onclick="jasonTipV1(1)">BILL 2</button>
+        <button class="btn-bill" onclick="jasonTipV1(2)">BILL 3</button>
+        <button class="btn-bill" onclick="jasonTipV1(3)">Another Bill</button>
+    </div>
+    <h1 class="total-bill"></h1>
+    <hr>
+    <!-- Temperatur Calculator -->
+    <h1>Temperature Conversion:</h1>
     <button class="fTemp" onclick="fTemp()">Fahrenheit 
         to <br> Celius Temperature</button>
     <button class="cTemp" onclick="cTemp()">Celsius to <br> Fahrenheit Tempperature</button>
     <h1 class="tempConversion"></h1>
     <hr>
+    <!-- Team Winner  -->
     <h1 class="teamWinner">Who is the winner?</h1>
-    <button onclick="data(0)">USE DATA 1</button>
-    <button onclick="data(1)">USE DATA 2</button>
-    <button onclick="data(2)">USE DATA 3</button>
+    <button onclick="calcAverage(0) ">USE DATA 1</button>
+    <button onclick="calcAverage(1)">USE DATA 2</button>
+    <button onclick="calcAverage(2)">USE DATA 3</button>
     <h1 class="winnerTeam"></h1>
-
-
+        <hr>
+    <h1>Jason's Tip Calculator V2</h1>
+    <div class="btns-container">
+        <button class="btn-bill" onclick="jasonTipV2(0)">Data 1</button>
+        <button class="btn-bill" onclick="jasonTipV2(3)">Another Bill</button>
+        <button class="reset" onclick="jasonTipV2(-1)">Reset</button>
+    </div>
+    <h1 class="total2-bill"></h1>
+    <hr>
 </body>
 </html>

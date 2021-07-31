@@ -6,4 +6,5 @@ Assignment 3:	CSS positionating (relative, absolute inside an image) <br>
 Assignment 4:	Clock hands animation using HTML and CSS <br>
 Assignment 5:	Modal Windows (How to open and close them with HTML and CSS) <br>
 Assignment 6:	Boostrap layout (basic boostrap layout, containers, table, row, cells) <br>
-Assignment 7:	Practice with JS	
+Assignment 7:	Practice with JS <br>
+Assignment 8:   More JS practice <br>

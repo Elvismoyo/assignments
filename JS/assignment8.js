@@ -54,6 +54,8 @@ const fTemp = () =>{
     console.log("Temperature Conversion:");
     console.log("Fahrenheit to Celsius:");
     let fTempInput = prompt("Type the Fahrenheit temperature:");
+    if(fTempInput == null)
+        fTempInput = 32;
     if(isNaN(fTempInput)){
     let message = document.querySelector(".tempConversion").innerHTML = 
     `${fTempInput} is not a valid number, try again.`;
@@ -63,13 +65,15 @@ const fTemp = () =>{
     let cTempOutput = (fTempInput - 32) * 5/9;
     let message = document.querySelector(".tempConversion").innerHTML = 
     `${fTempInput}°F is ${cTempOutput.toFixed(1)}°C`;
-    console.log(  `${fTempInput}°F is ${cTempOutput.toFixed(1)}°C`);
+    console.log(message);
 } 
 
 const cTemp = () => {
     console.log("Temperature Conversion:");
     console.log("Celsius to Fahrenheit:");
-    let cTempInput = prompt("Type the Celsius temperature:")
+    let cTempInput = prompt("Type the Celsius temperature:");
+    if(cTempInput == null)
+        cTempInput = 0;
     if(isNaN(cTempInput)){
         let message = document.querySelector(".tempConversion").innerHTML = 
         `${cTempInput} is not a valid number, try again.`;
@@ -156,6 +160,9 @@ const jasonTipV2 = (index) =>{
     }
     if(index == 3){
         let value = prompt("Insert new bill:");
+       
+        if(value == null)
+        value = 97;
         while(isNaN(value)){
             messages.innerHTML =  `${value} is not a valid number, try again`
             console.log(`${value} is not a valid number, try again`);
@@ -182,7 +189,6 @@ const calcTip = (bills, index) =>{
         if(bills[i] >= 50 && bills[i] <=300){
             tip = 0;
             tip =  bills[i] * .15;
-            console.log(tip);
             tips.push(tip);
             total = tip + bills[i];
             totalbills.push(total);
@@ -197,7 +203,7 @@ const calcTip = (bills, index) =>{
         typeOftip.push(tip2);
         }
     }
-    console.log(tips);
+  
 
     if(bills.length == 4){
         messages.innerHTML += `Your bill was $${bills[index]}, the ${typeOftip[index]} was $${tips[index].toFixed(2)}, and the total value $${totalbills[index].toFixed(2)} <br>`

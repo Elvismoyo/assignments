@@ -176,32 +176,37 @@ const calcTip = (bills, index) =>{
     let total = 0;
     let tip1 = "tip(15%)";
     let tip2 = "tip(20%)";
-    let tip = [];
+    let typeOftip = [];
+    let tip = 0;
     for(let i = 0; i < bills.length; i++){
-        if(bills[i] > 50 && bills[i] <=300){
-            let tips1 = bills[index] * .15
-            tips.push(tips1);
-            total = tips1 + bills[i];
+        if(bills[i] >= 50 && bills[i] <=300){
+            tip = 0;
+            tip =  bills[i] * .15;
+            console.log(tip);
+            tips.push(tip);
+            total = tip + bills[i];
             totalbills.push(total);
-            tip.push(tip1)    
+            typeOftip.push(tip1)    
        }
         else{
-        let tips2 = bills[i] * .2;
-        tips.push(tips2)
-        total = tips2 + bills[i];
+        tip = 0;
+        tip = bills[i] * .2;
+        tips.push(tip);
+        total = tip + bills[i];
         totalbills.push(total);
-        tip.push(tip2);
+        typeOftip.push(tip2);
         }
     }
+    console.log(tips);
 
     if(bills.length == 4){
-        messages.innerHTML += `Your bill was $${bills[index]}, the ${tip[index]} was $${tips[index].toFixed(2)}, and the total value $${totalbills[index].toFixed(2)} <br>`
-        console.log(`Your bill was $${bills[index]}, the ${tip[index]} was $${tips[index].toFixed(2)}, and the total value $${totalbills[index].toFixed(2)}`);
+        messages.innerHTML += `Your bill was $${bills[index]}, the ${typeOftip[index]} was $${tips[index].toFixed(2)}, and the total value $${totalbills[index].toFixed(2)} <br>`
+        console.log(`Your bill was $${bills[index]}, the ${typeOftip[index]} was $${tips[index].toFixed(2)}, and the total value $${totalbills[index].toFixed(2)}`);
         return;
     }
     for (let i = 0; i < bills.length; i++) {
-        messages.innerHTML += `The bill was $${bills[i]}, the ${tip[i]} was $${tips[i].toFixed(2)}, and the total value $${totalbills[i].toFixed(2)} <br>`
-        console.log(`The bill was $${bills[i]}, the ${tip[i]} was $${tips[i].toFixed(2)}, and the total value $${totalbills[i].toFixed(2)}`);
+        messages.innerHTML += `The bill was $${bills[i]}, the ${typeOftip[i]} was $${tips[i].toFixed(2)}, and the total value $${totalbills[i].toFixed(2)} <br>`
+        console.log(`The bill was $${bills[i]}, the ${typeOftip[i]} was $${tips[i].toFixed(2)}, and the total value $${totalbills[i].toFixed(2)}`);
         
     }
 }
